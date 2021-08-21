@@ -1,4 +1,4 @@
-import { Context, ErrorLevel, type, messages } from "..";
+import { Context, ErrorLevel, messages, type } from "..";
 
 const isOk = type<string>("string");
 

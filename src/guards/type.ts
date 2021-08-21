@@ -1,4 +1,5 @@
-import { Context, Guard } from "..";
+import { Context } from "..";
+import { Guard } from "../types";
 
 export const type = <T>(expectedType: string, kind = "type"): Guard<T> => {
 	return (value, context = new Context()): value is any => {

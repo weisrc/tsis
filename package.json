@@ -7,5 +7,24 @@
 		"jest": "^27.0.6",
 		"ts-jest": "^27.0.5",
 		"typescript": "^4.3.5"
-	}
+	},
+	"name": "tsis",
+	"description": "Typescript type guard and validation",
+	"version": "0.0.1",
+	"main": "src/index.ts",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/weisrc/tsis.git"
+	},
+	"keywords": [
+		"typescript",
+		"type-guard",
+		"validation"
+	],
+	"author": "weisrc",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/weisrc/tsis/issues"
+	},
+	"homepage": "https://github.com/weisrc/tsis#readme"
 }

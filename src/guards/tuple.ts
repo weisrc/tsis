@@ -1,4 +1,5 @@
-import { array, Context, Guard, struct } from "..";
+import { array, Context, struct } from "..";
+import { Guard } from "../types";
 
 export const tuple = <T extends readonly Guard[]>(...guards: T): Guard<T> => {
 	const guard = struct<T>(guards);

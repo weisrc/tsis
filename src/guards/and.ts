@@ -1,4 +1,5 @@
-import { Context, ErrorLevel, Guard, GuardTypeOf, UnionToIntersection } from "..";
+import { Context, ErrorLevel } from "..";
+import { Guard, UnionToIntersection, GuardTypeOf } from "../types";
 
 export const and = <T extends Guard[]>(
 	...guards: T

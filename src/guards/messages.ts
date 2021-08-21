@@ -1,4 +1,4 @@
-import { Messages } from "./types";
+import { Messages } from "../types";
 
 export const messages: Messages = {
 	default: () => "expected something else",

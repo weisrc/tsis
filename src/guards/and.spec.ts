@@ -1,4 +1,4 @@
-import { Context, ErrorLevel, and, string, len, messages } from "..";
+import { and, Context, ErrorLevel, len, messages, string } from "..";
 
 const isOk = and(string, len(0, 3));
 

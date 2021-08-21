@@ -1,5 +1,5 @@
-import { object } from ".";
-import { Guard, KV, ErrorLevel, Context } from "..";
+import { Context, object } from "..";
+import { Guard, KV } from "../types";
 
 export const struct = <T extends KV<Guard> | readonly Guard[]>(
 	members: T,

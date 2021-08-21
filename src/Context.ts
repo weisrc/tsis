@@ -1,5 +1,12 @@
-import { messages as defaultMessages } from "./messages";
-import { ErrorLevel, Errors, Messages } from "./types";
+import { messages as defaultMessages } from "./guards/messages";
+import { Errors, Messages } from "./types";
+
+export enum ErrorLevel {
+	None,
+	One,
+	All,
+	Gold,
+}
 
 export class Context {
 	constructor(
@@ -8,6 +15,9 @@ export class Context {
 		public path: string = "",
 		public errors: Errors = {}
 	) {}
+	copy(): Context {
+		return new Context(this.errorLevel, this.messages, this.path, { ...this.errors });
+	}
 	silent(): Context {
 		return new Context(ErrorLevel.None, this.messages, this.path, this.errors);
 	}

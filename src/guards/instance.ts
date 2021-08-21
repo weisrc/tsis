@@ -1,4 +1,5 @@
-import { Context, Guard } from "..";
+import { Context } from "..";
+import { Guard } from "../types";
 
 export const instance = <T extends () => void>(
 	expectedInstance: T,

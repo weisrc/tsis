@@ -1,5 +1,5 @@
-import { Narrowable, Guard } from "..";
-import { Context } from "../Context";
+import { Context } from "..";
+import { Narrowable, Guard } from "../types";
 
 export const inside = <T extends readonly Narrowable[]>(
 	values: T,

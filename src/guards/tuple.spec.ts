@@ -1,4 +1,4 @@
-import { Context, ErrorLevel, tuple, messages, string, number } from "..";
+import { Context, ErrorLevel, messages, number, string, tuple } from "..";
 
 const isOk = tuple(string, number);
 

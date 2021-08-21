@@ -1,3 +1,4 @@
+export * from "./messages";
 export * from "./and";
 export * from "./inside";
 export * from "./instance";

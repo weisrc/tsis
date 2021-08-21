@@ -1,4 +1,5 @@
-import { Context, Guard } from "..";
+import { Context } from "..";
+import { Guard } from "../types";
 
 export const len = (min: number, max: number, kind = "len"): Guard<[] | string> => {
 	return (value: unknown, context = new Context()): value is any => {

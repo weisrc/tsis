@@ -1,4 +1,4 @@
-import { Context, ErrorLevel, or, messages, string, number } from "..";
+import { Context, ErrorLevel, messages, number, or, string } from "..";
 
 const isOk = or(string, number);
 

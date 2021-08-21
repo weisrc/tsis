@@ -1,5 +1,5 @@
-import { string } from ".";
-import { Context, Guard } from "..";
+import { Context, string } from "..";
+import { Guard } from "../types";
 
 type Validator = RegExp | ((v: string) => boolean);
 

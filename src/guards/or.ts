@@ -1,4 +1,5 @@
-import { Guard, ErrorLevel, Context } from "..";
+import { Context } from "..";
+import { Guard } from "../types";
 
 export const or = <T extends Guard[]>(...guards: T): T[number] => {
 	return (value, context = new Context()): value is any => {

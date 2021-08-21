@@ -1,4 +1,4 @@
-import { Context, ErrorLevel, optional, messages, string } from "..";
+import { Context, ErrorLevel, messages, optional, string } from "..";
 
 const isOk = optional(string);
 

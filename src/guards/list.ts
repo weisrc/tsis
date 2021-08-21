@@ -1,5 +1,5 @@
-import { array, struct } from ".";
-import { Context, Guard } from "..";
+import { array, Context } from "..";
+import { Guard } from "../types";
 
 export const list =
 	<T extends Guard>(guard: T): Guard<(T extends Guard<infer X> ? X : never)[]> =>

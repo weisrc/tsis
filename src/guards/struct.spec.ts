@@ -1,4 +1,4 @@
-import { Context, ErrorLevel, struct, messages, string, number } from "..";
+import { Context, ErrorLevel, messages, number, string, struct } from "..";
 
 const isOk = struct(
 	{
